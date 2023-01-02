@@ -47,6 +47,7 @@ install -> create Query Client and add QueryProvider
 - 캐시데이터는 쿼리를 다시 실행했을떄 사용된다( 데이터가 최신생타인지 서버에서 확인하는 동안사용자에게 표시됨)
 - cache 는 나중에 다시 필요할 수도 있는 데이터이다.
 - 특정 쿼리에 대한 활성 useQuery가 없는 경우 clod storage로 들어감.
+
 - 구성된 cache time이 지나면 캐시의 데이터가 만료되며, 기본값은 5분이다.
 - 시간의 양은 특정쿼리에 대한 useQuery가 활성화된후 경과된 시간이다.
 - 캐시가 만료되면 가비지 컬렉션이 실행되고 클라이언트는 데이터를 사용할수 없다.
@@ -68,3 +69,4 @@ install -> create Query Client and add QueryProvider
 - useMutation 훅 사용 -> useQuery와 비슷하나 mutate함수를 출력함.
   -> 쿼리가 아니므로 쿼리키는 필요하지않음
   -> 재시도를 하지않음, 설정은 가능
+
